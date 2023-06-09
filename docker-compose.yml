@@ -1,0 +1,11 @@
+ services:
+  owncast:
+      image: owncast/owncast:
+      container_name: "owncast"
+      restart: unless-stopped
+      security_opt:
+        - no-new-privileges:true
+      ports:
+        - "1935:1935"
+      volumes:
+        - "data:/app/data"
