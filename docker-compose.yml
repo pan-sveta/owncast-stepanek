@@ -1,7 +1,7 @@
 version: "3.4"
 services:
   owncast:
-      image: owncast/owncast:
+      image: owncast/owncast
       container_name: "owncast"
       restart: unless-stopped
       security_opt:
